@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>FruitServlet</servlet-name>
+        <servlet-class>org.udea.web.FruitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FruitsServlet</servlet-name>
+        <servlet-class>org.udea.web.FruitsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProcesarServlet</servlet-name>
+        <servlet-class>org.udea.web.ProcesarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AlmacenarFactura</servlet-name>
+        <servlet-class>org.udea.web.AlmacenarFacturaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FruitServlet</servlet-name>
+        <url-pattern>/FruitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FruitsServlet</servlet-name>
+        <url-pattern>/FruitsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProcesarServlet</servlet-name>
+        <url-pattern>/ProcesarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlmacenarFactura</servlet-name>
+        <url-pattern>/AlmacenarFactura</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

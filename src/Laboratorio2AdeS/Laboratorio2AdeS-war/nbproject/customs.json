@@ -1,0 +1,10 @@
+{
+    "attributes": {
+        "bordercolor": {
+            "context": "table"
+        }
+    },
+    "elements": {
+        "title": {}
+    }
+}
